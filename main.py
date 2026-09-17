@@ -28,5 +28,5 @@ def check_status():
 
     if auth_state["unlock_granted"] and (current_time-auth_state["timestamp"] <=30):
         auth_state["unlock_granted"] = False
-        return {"unlock: True"}
+        return {"unlock": True}
     return {"unlock": False}
